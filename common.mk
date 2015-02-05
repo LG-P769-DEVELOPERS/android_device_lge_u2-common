@@ -208,6 +208,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CPU OC init.d
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/25lg:system/etc/init.d/25lg
+    
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
