@@ -127,7 +127,6 @@ TARGET_KERNEL_MODULES += SGX_MODULES
 BOARD_RIL_CLASS := ../../../device/lge/u2-common/ril/
 
 # Charger
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/u2-common/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Override healthd HAL to use charge_counter for 1%
