@@ -33,6 +33,15 @@ TARGET_RECOVERY_FSTAB = device/lge/u2-common/fstab.u2
 RECOVERY_FSTAB_VERSION = 2
 BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun/file"
 TARGET_OTA_ASSERT_DEVICE := p760,p765,p768,p769,u2
+DEVICE_RESOLUTION := 540x960
+HAVE_SELINUX := true
+TW_EXTERNAL_STORAGE_PATH := "/storage/sdcard0"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_FLASH_FROM_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := true
+TW_MAX_BRIGHTNESS := 255
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_BRIGHTNESS_PATH := /sys/devices/platform/omap/omap_i2c.2/i2c-2/2-0036/brightness
 
 # EGL
 BOARD_EGL_CFG := device/lge/u2-common/egl.cfg
